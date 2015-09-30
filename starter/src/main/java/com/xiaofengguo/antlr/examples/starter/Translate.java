@@ -14,7 +14,7 @@ import org.antlr.v4.runtime.tree.*;
 public class Translate {
     public static void main(String[] args) throws Exception {
         // create a CharStream that reads from standard input
-        ANTLRInputStream input = new ANTLRInputStream(System.in);
+        ANTLRInputStream input = new ANTLRInputStream("{1, {2, 4}, 3}");
         // create a lexer that feeds off of input CharStream
         ArrayInitLexer lexer = new ArrayInitLexer(input);
         // create a buffer of tokens pulled from the lexer
